@@ -55,7 +55,7 @@ function WorkflowCard({ workFlow }: { workFlow: Workflow }) {
           <div>
             <h3 className="text-muted-foreground flex items-center font-semibold">
               <Link
-                href={`/workflows/${workFlow.id}`}
+                href={`/workflows/editor/${workFlow.id}`}
                 className="hover:underline"
               >
                 {workFlow.name}
@@ -70,7 +70,7 @@ function WorkflowCard({ workFlow }: { workFlow: Workflow }) {
         </div>
         <div className="flex items-center space-x-2">
           <Link
-            href={`/workflows/editor/${workFlow.id}`}
+            href={`/workflow/editor/${workFlow.id}`}
             className={cn(
               buttonVariants({ variant: "outline", size: "sm" }),
               "flex items-center gap-2"
